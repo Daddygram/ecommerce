@@ -1,22 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import { HiOutlineShoppingBag } from 'react-icons/hi2'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+
+  const [menu, setmenu] = useState("shop")
+
   return (
     <div className="navbar">
         <div className="nav-logo">
             <a href="/">YourLogo</a>
         </div>
         <ul className="nav-menu">
-            <li>Shop <hr/></li>
-            <li>Men</li>
-            <li>Women</li>
-            <li>Kids</li>
+            <li onClick={()=>setmenu("shop")}><Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/"}>Shop</Link>{menu=="shop"?<hr/>:<></>}</li>
+            <li onClick={()=>setmenu("mens")}><Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/men"}>Men</Link>{menu=="mens"?<hr/>:<></>}</li>
+            <li onClick={()=>setmenu("womens")}><Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/women"}>Women</Link>{menu=="womens"?<hr/>:<></>}</li>
+            <li onClick={()=>setmenu("kids")}><Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/kids"}>Kids</Link>{menu=="kids"?<hr/>:<></>}</li>
         </ul>
         <div className="nav-login-cart">
-            <button>Login</button>
-            <HiOutlineShoppingBag />
+          <Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/login"}><button className='btn'>Login</button></Link>
+          <Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/cart"}><HiOutlineShoppingBag size={"25px"} /></Link>
+          <div className="nav-cart-count">0</div>
         </div>
     </div>
   )
