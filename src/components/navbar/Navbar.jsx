@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
         <div className="nav-logo">
-            <a href="/">YourLogo</a>
+          <Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/"}>YourLogo</Link>
         </div>
         <ul className="nav-menu">
             <li onClick={()=>setmenu("shop")}><Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/"}>Shop</Link>{menu=="shop"?<hr/>:<></>}</li>

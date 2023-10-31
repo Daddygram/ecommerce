@@ -1,6 +1,11 @@
-* {
+*, body, html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -10,4 +15,14 @@ h1 {
 
 a, button {
   transition: all 300ms ease;
+}
+
+.layout {
+  padding: 10px;
+}
+
+.main-container {
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
 }

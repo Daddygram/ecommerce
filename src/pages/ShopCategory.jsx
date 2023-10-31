@@ -1,8 +1,11 @@
 import React from 'react'
+import './css/ShopCategory.css'
 
 const ShopCategory = () => {
   return (
-    <div>ShopCategory</div>
+    <div classname>
+      
+    </div>
   )
 }
 
