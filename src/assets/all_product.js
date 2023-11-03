@@ -323,7 +323,7 @@ let all_product = [
     image: p36_img,
     new_price: 85.0,
     old_price: 120.5,
-  },
+  }
 ];
 
 export default all_product;
