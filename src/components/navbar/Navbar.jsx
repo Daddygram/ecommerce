@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Navbar.css'
 import { HiOutlineShoppingBag } from 'react-icons/hi2'
 import { Link } from 'react-router-dom'
+import { ShopContext } from '../../context/ShopContext'
 
 const Navbar = () => {
 
   const [menu, setmenu] = useState("shop")
+  const {getTotalCartItems} = useContext(ShopContext)
 
   return (
     <div className="navbar">
@@ -21,7 +23,7 @@ const Navbar = () => {
         <div className="nav-login-cart">
           <Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/login"}><button className='btn'>Login</button></Link>
           <Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/cart"}><HiOutlineShoppingBag size={"25px"} /></Link>
-          <div className="nav-cart-count">0</div>
+          <div className="nav-cart-count">{getTotalCartItems()}</div>
         </div>
     </div>
   )

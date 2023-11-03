@@ -34,6 +34,7 @@
     outline: none;
     color: #5c5c5c;
     font-size: 18px;
+    border-radius: 10px;
 }
 
 .loginsignup-container button {
@@ -46,6 +47,7 @@
     font-size: 24px;
     font-weight: 500;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .loginsignup-login {
