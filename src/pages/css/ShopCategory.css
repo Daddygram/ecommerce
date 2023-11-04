@@ -21,11 +21,20 @@
     border: 1px solid #888;
 }
 
-.shopcategory-products{
+/* .shopcategory-products{
     margin: 20px 70px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 80px;
+} */
+
+.shopcategory-products{
+    margin: 20px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .shopcategory-loadmore {

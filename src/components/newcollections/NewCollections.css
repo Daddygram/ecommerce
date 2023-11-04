@@ -18,9 +18,18 @@
     background: #252525;
 }
 
-.collections {
+/* .collections {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
+} */
+
+.collections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 50px;
     gap: 30px;
 }

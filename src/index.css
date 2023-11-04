@@ -14,7 +14,7 @@
   -webkit-text-size-adjust: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -24,5 +24,39 @@
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-right {
+    display: none;
+  }
+
+  .hero-left {
+    padding: 0;
+  }
+
+  .hero-left h2 {
+    text-align: center;
+  }
+
+  .hero-left p {
+    text-align: center;
+  }
+
+  .hero-hand-icon {
+    justify-content: center;
+  }
+
+  .hero-latest-btn {
+    align-self: center;
+  }
+
+  .offers-right {
+    display: none;
+  }
+
+  .newsletter h1 {
+    font-size: 35px;
   }
 }
