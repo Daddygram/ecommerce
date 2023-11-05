@@ -6,12 +6,12 @@
 
 .shopcategory-indexSort {
     display: flex;
-    margin: 0 170px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .shopcategory-indexSort p span {
+    text-align: center;
     font-weight: 600;
 }
 
@@ -20,13 +20,6 @@
     border-radius: 40px;
     border: 1px solid #888;
 }
-
-/* .shopcategory-products{
-    margin: 20px 70px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 80px;
-} */
 
 .shopcategory-products{
     margin: 20px 70px;
@@ -49,4 +42,5 @@
     color: #787878;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
 }

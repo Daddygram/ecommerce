@@ -10,7 +10,7 @@ const CartItems = () => {
 
   return (
     <div className='cartitems'>
-      <div className="cartitems-format-main">
+      <div className="cartitems-format-main cartitems-title">
         <p>Products</p>
         <p>Title</p>
         <p>Price</p>
