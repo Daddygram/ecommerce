@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import { createContext, useState } from 'react'
 import all_product from '../assets/all_product.js'
 
 export const ShopContext = createContext(undefined)
